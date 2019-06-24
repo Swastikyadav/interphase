@@ -1,0 +1,56 @@
+// Button Styles
+.btn {
+  padding: 1rem 3rem;
+  border: 1px solid $textDark;
+  color: $textDark;
+  background: transparent;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.04rem;
+  cursor: pointer;
+  &:hover {
+    background: rgba($textDark, 0.3);
+  }
+}
+.btn-primary {
+  border: 1px solid $textLight;
+  color: $textLight;
+}
+
+// Forms
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid $textDark;
+  color: $textDark;
+  &::placeholder {
+    color: $textDark;
+    font-size: 0.9rem;
+  }
+}
+
+// Padding
+.padding {
+  padding: 4rem 0;
+}
+
+// Hedings
+.heading {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.sub-heading {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+
+// Text
+.main-text {
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.04rem;
+}

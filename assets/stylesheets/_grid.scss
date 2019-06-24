@@ -1,0 +1,29 @@
+.wrapper {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.grid-col2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.grid-col3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+.grid-col4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+@media all and (max-width: 768px) {
+  .grid-col1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

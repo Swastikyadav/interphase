@@ -1,0 +1,185 @@
+// Header
+.header {
+  padding: 1.5rem 0;
+  position: absolute;
+  width: 100%;
+}
+.logo {
+  h1 {
+    font-size: 2rem;
+    color: $textLight;
+  }
+}
+.menu__link {
+  margin-left: 1rem;
+  color: $textLight;
+  &:hover {
+    color: $primary;
+  }
+}
+#toggle,
+.ham {
+  display: none;
+}
+
+// Hero
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../media/banner.jpg") no-repeat;
+  padding: 12rem 0;
+  background-size: cover;
+  color: $textLight;
+}
+.hero__heading {
+  font-weight: 300;
+}
+.hero__text {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  font-weight: 300;
+}
+
+// Servie
+.service {
+  background: linear-gradient(45deg, $primary 50%, $primaryDark 50%);
+  color: $textLight;
+}
+.service__wrapper {
+  margin-top: 3rem;
+  grid-gap: 5rem;
+}
+.service__icon-box {
+  height: 5rem;
+  width: 5rem;
+  border: 1px solid $textLight;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+// Article Section
+.article {
+  color: $textDark;
+}
+.article__wrapper {
+  margin-top: 2.5rem;
+  border-top: 2.2px double $textDark;
+  padding-top: 3rem;
+  grid-row-gap: 4rem;
+  margin-bottom: 4rem;
+}
+.article__header {
+  border-bottom: 2.2px double $textDark;
+  padding-bottom: 1.6rem;
+  margin-bottom: 1.6rem;
+  img {
+    border-radius: 4px;
+  }
+}
+.article__heading {
+  font-size: 1.3rem;
+  color: $textDark;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+// Footer
+.footer {
+  background: $secondary;
+  color: $textDark;
+}
+.footer__heading {
+  font-size: 1.2rem;
+  color: $textLight;
+}
+.footer__text {
+  margin: 1rem 0 1.5rem 0;
+}
+.footer__menu-item {
+  line-height: 3;
+  border-bottom: 0.5px solid $textDark;
+  margin-bottom: 0.8rem;
+  a {
+    color: $textDark;
+    text-decoration: underline;
+    font-size: 0.9rem;
+  }
+}
+.social {
+  margin: 1rem 0 1.5rem 0;
+}
+.social__icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 1px solid $textDark;
+  font-size: 1.4rem;
+  color: $textDark;
+}
+.contact-item {
+  line-height: 2;
+  border-bottom: 1px solid $textDark;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  a {
+    color: $textDark;
+    text-decoration: underline;
+  }
+  &:last-child a {
+    text-decoration: none;
+  }
+}
+.contact-heading {
+  width: 8rem;
+  font-size: 1.3rem;
+  color: $textLight;
+  font-weight: 300;
+}
+
+// Policy
+.policy {
+  margin-top: 3rem;
+}
+.policy__item {
+  padding: 0 2rem;
+  &:nth-child(2) {
+    border-left: 1px solid $textDark;
+    border-right: 1px solid $textDark;
+    a {
+      text-transform: uppercase;
+    }
+  }
+  a {
+    color: $textDark;
+    text-decoration: underline;
+  }
+}
+
+@media all and(max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: rgba($primary, 0.8);
+    left: 0;
+    top: 0;
+    padding-top: 6rem;
+    height: 100vh;
+    .menu__link {
+      margin: 1rem 0;
+      font-size: 1.6rem;
+      color: $secondary;
+    }
+  }
+  .ham {
+    display: inline-block;
+    position: relative;
+    z-index: 99;
+  }
+  #toggle:checked ~ .menu {
+    display: flex;
+  }
+}
